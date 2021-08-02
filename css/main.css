@@ -1,0 +1,1556 @@
+@font-face {
+    src: url("../fonts/Nunito-Bold.ttf");
+    font-family: 'NunitoBold';
+}
+
+@font-face {
+    src: url("../fonts/Nunito-Regular.ttf");
+    font-family: 'NunitoRegular';
+}
+
+@font-face {
+    src: url("../fonts/Nunito-SemiBold.ttf");
+    font-family: 'NunitoSemiBold';
+}
+
+@font-face {
+    src: url("../fonts/YesevaOne-Regular.ttf");
+    font-family: 'YesevaOneRegular';
+}
+
+body {
+    margin: 0;
+    background-color: #fcfcfc;
+}
+
+#bg {
+    background-image: url("../image/bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 745px;
+}
+
+#header {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transform: scale(-1, 1);
+    fill: #b26e77;
+}
+
+.logo span {
+    font-size: 25px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+#menu {
+    width: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu a, #mobile-menu a {
+    font-size: 14px;
+    font-family: "NunitoSemiBold", sans-serif;
+    color: rgb(131, 109, 115);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: .5s all;
+}
+
+#menu a:hover {
+    color: rgb(165, 142, 149);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+#mobile-menu a:hover {
+    color: rgb(165, 142, 149);
+}
+
+#menu a:active, #mobile-menu a:active {
+    color: rgb(91, 76, 80);
+}
+
+#menu a:disabled, #mobile-menu a:disabled {
+    color: rgb(188, 182, 184);
+}
+
+.btn-transparent {
+    border: 1px solid rgb(178, 110, 119);
+    width: 192px;
+    padding: 13px;
+    font-size: 14px;
+    font-family: "NunitoSemiBold", sans-serif;
+    color: rgb(178, 110, 119);
+    outline: none;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 23px;
+    box-sizing: border-box;
+    animation: pulse_btn 3s linear backwards infinite;
+}
+
+@keyframes pulse_btn {
+    0% {
+        box-shadow: 0 0 2px 2px rgba(178, 110, 119, 0.08);
+    }
+    50% {
+        box-shadow: 0 0 5px 5px rgba(178, 110, 119, 0.33);
+    }
+    100% {
+        box-shadow: 0 0 2px 2px rgba(178, 110, 119, 0.08);
+    }
+}
+
+.btn-transparent:hover {
+    color: rgb(207, 152, 159);
+    border-color: rgb(207, 152, 159);
+}
+
+.btn-transparent:active {
+    color: rgb(138, 81, 88);
+    border-color: rgb(138, 81, 88);
+}
+
+.btn-transparent:disabled {
+    color: rgb(188, 182, 184);
+    border-color: rgb(188, 182, 184);
+}
+
+#main {
+    margin: 124px auto 0 auto;
+    max-width: 1110px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#main-info {
+    max-width: 600px;
+}
+
+#main-info #main-title {
+    font-size: 50px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    line-height: 1.2;
+    margin-bottom: 35px;
+    letter-spacing: 0.02em;
+}
+
+#main-info #main-text {
+    font-size: 18px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.278;
+    margin-bottom: 60px;
+    letter-spacing: 0.01em;
+}
+
+#main-action {
+    text-decoration: none;
+    width: 360px;
+    display: inline-block;
+}
+
+.btn-pink {
+    background-image: -moz-linear-gradient(90deg, rgb(178, 110, 119) 0%, rgb(216, 151, 159) 71%);
+    background-image: -webkit-linear-gradient(90deg, rgb(178, 110, 119) 0%, rgb(216, 151, 159) 71%);
+    background-image: -ms-linear-gradient(90deg, rgb(178, 110, 119) 0%, rgb(216, 151, 159) 71%);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#main-action button {
+    border-radius: 30px;
+    width: 360px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 15px 8px;
+    position: relative;
+}
+
+.btn-pink:hover {
+    background-image: -moz-linear-gradient(90deg, rgb(207, 152, 159) 0%, rgb(227, 191, 195) 71%);
+    background-image: -webkit-linear-gradient(90deg, rgb(207, 152, 159) 0%, rgb(227, 191, 195) 71%);
+    background-image: -ms-linear-gradient(90deg, rgb(207, 152, 159) 0%, rgb(227, 191, 195) 71%);
+}
+
+#main-action button:hover div svg path {
+    fill: #cf989f;
+}
+
+.btn-pink:active {
+    background-image: -moz-linear-gradient(90deg, rgb(138, 81, 88) 0%, rgb(214, 163, 170) 71%);
+    background-image: -webkit-linear-gradient(90deg, rgb(138, 81, 88) 0%, rgb(214, 163, 170) 71%);
+    background-image: -ms-linear-gradient(90deg, rgb(138, 81, 88) 0%, rgb(214, 163, 170) 71%);
+}
+
+#main-action button:active div svg path {
+    fill: #8a5158;
+}
+
+.btn-pink:disabled {
+    background-image: -moz-linear-gradient(90deg, rgb(188, 182, 184) 0%, rgb(227, 224, 225) 71%);
+    background-image: -webkit-linear-gradient(90deg, rgb(188, 182, 184) 0%, rgb(227, 224, 225) 71%);
+    background-image: -ms-linear-gradient(90deg, rgb(188, 182, 184) 0%, rgb(227, 224, 225) 71%);
+}
+
+#main-action button:disabled div svg path {
+    fill: #bcb6b8;
+}
+
+#main-action button div svg {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: calc(50% - 13.5px);
+    left: calc(50% - 13.5px);
+    vertical-align: middle;
+    fill: #b26e77;
+    animation: scale_svg 2s linear infinite;
+}
+
+@keyframes scale_svg {
+    0% {
+        transform: scale(0.85);
+        -moz-transform: scale(0.85);
+        -o-transform: scale(0.85);
+        -webkit-transform: scale(0.85);
+    }
+    50% {
+        transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    100% {
+        transform: scale(0.85);
+        -moz-transform: scale(0.85);
+        -o-transform: scale(0.85);
+        -webkit-transform: scale(0.85);
+    }
+}
+
+#main-action button div {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fdfbfd;
+    position: relative;
+}
+
+#main-action span {
+    font-size: 18px;
+    font-family: "NunitoSemiBold", sans-serif;
+    color: rgb(254, 254, 254);
+    letter-spacing: 0.01em;
+    margin-left: 30px;
+}
+
+#main-image {
+    max-width: 300px;
+    position: relative;
+    bottom: -5px;
+    left: -90px;
+    display: flex;
+}
+
+#main-image img {
+    z-index: 1;
+    max-width: 602px;
+}
+
+#features-container {
+    margin: 0 auto 145px auto;
+    max-width: 1110px;
+}
+
+.block-title {
+    font-size: 40px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+#features {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.feature .feature-img {
+    width: 49px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 17px auto;
+}
+
+.feature .feature-img object {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+object img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.feature .feature-text {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.309;
+    max-width: 188px;
+    letter-spacing: 0.01em;
+}
+
+#advantages-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+#advantages-container .block-title {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#advantages-container #advantages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#advantages .advantage {
+    display: flex;
+    width: 540px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#advantages-nav {
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#advantages-nav .slick-next::after {
+    content: '4';
+}
+
+#advantages .advantage.advantage-up {
+    position: relative;
+    top: -60px;
+}
+
+#advantages .advantage .advantage-image {
+    position: relative;
+    width: 285px;
+    height: 420px;
+    transition: .5s all;
+}
+
+#advantages .advantage .advantage-image img {
+    max-width: 330px;
+    position: absolute;
+    top: 0;
+}
+
+#advantages .advantage .advantage-image img.img-right {
+    right: -12px;
+    /*overflow:hidden;*/
+}
+
+#advantages .advantage .advantage-text {
+    text-align: center;
+    max-width: 254px;
+}
+
+#advantages .advantage .advantage-text .advantage-title {
+    font-size: 18px;
+    line-height: 1.278;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    max-width: 198px;
+    margin: 0 auto;
+    letter-spacing: 0.01em;
+}
+
+#advantages .advantage .advantage-text .advantage-description {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    margin-top: 16px;
+    letter-spacing: 0.01em;
+}
+
+#advantages .advantage .advantage-text .advantage-description.third {
+    max-width: 230.5px;
+}
+
+#programs-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 180px;
+}
+
+#programs-container .block-title {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+#programs-container #programs {
+    border: 0;
+    margin-top: 50px;
+    background: transparent;
+    padding: 0;
+}
+
+#programs-container #programs ul li a {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    font-family: "NunitoSemiBold", sans-serif;
+    color: rgb(131, 109, 115);
+    padding: 13px 30px;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+}
+
+#programs-container #programs ul li {
+    border-width: 1px;
+    border-color: rgb(131, 109, 115);
+    border-style: solid;
+    margin: 10px;
+    border-radius: 25.5px;
+    background: transparent;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#programs-container #programs ul li.ui-state-hover {
+    border-color: rgb(165, 142, 149);
+}
+
+#programs-container #programs ul li.ui-state-hover a {
+    color: rgb(165, 142, 149);
+}
+
+#programs-container #programs ul li.ui-state-focus {
+    border-color: rgb(91, 76, 80);
+}
+
+#programs-container #programs ul li.ui-state-focus a {
+    color: rgb(91, 76, 80);
+}
+
+#programs-container #programs ul li.ui-state-active {
+    background-color: rgb(178, 110, 119);
+    border: 1px solid rgb(178, 110, 119);
+}
+
+#programs-container #programs ul li.ui-state-active a {
+    color: rgb(255, 255, 255);
+}
+
+#programs-container #programs ul li:disabled {
+    border-color: rgb(188, 182, 184);
+}
+
+#programs-container #programs ul li:disabled a {
+    color: rgb(188, 182, 184);
+}
+
+#programs-container #programs ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 920px;
+    margin: 0 auto 40px auto;
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+#programs .program {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#programs .program .program-image {
+    background-size: cover;
+    background-position: center;
+    width: 475px;
+    border-radius: 20px 0 0 20px;
+}
+
+#programs .program .program-text {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-right: 60px;
+    max-width: 508px;
+}
+
+#programs .program .program-title {
+    font-size: 23px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    letter-spacing: 0.01em;
+}
+
+#programs .program .program-description {
+    margin: 30px 0 40px 0;
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    letter-spacing: 0.01em;
+}
+
+#programs .program .program-items {
+    max-width: 345px;
+    margin-bottom: 40px;
+}
+
+#programs .program .program-items .program-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#programs .program .program-items .program-item:last-child {
+    align-items: flex-start;
+}
+
+#programs .program .program-items .program-item .program-item-image {
+    width: 24px;
+    margin-right: 12px;
+}
+
+#programs .program .program-items .program-item .program-item-image object {
+    width: 100%;
+}
+
+#programs .program .program-items .program-item .program-item-title {
+    font-size: 16px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    margin-right: 9px;
+    letter-spacing: 0.01em;
+}
+
+#programs .program .program-items .program-item .program-item-text {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    max-width: 201px;
+    letter-spacing: 0.01em;
+}
+
+#programs .program .program-items .program-item .program-item-text span {
+    width: 100%;
+    display: inline-block;
+}
+
+#programs .program .program-action button {
+    width: 315px;
+    padding: 19px;
+    border-radius: 29.5px;
+    font-size: 16px;
+    font-family: "NunitoSemiBold", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.01em;
+}
+
+#teachers-container {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-bottom: 175px;
+}
+
+#teachers-container .block-title {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#teachers-container #teachers {
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+#teachers-container .teacher {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#teachers-container .teacher .teacher-text {
+    max-width: 552px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    padding-left: 65px;
+    height: 436px;
+}
+
+#teachers-container .teacher .teacher-title {
+    font-size: 23px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+}
+
+#teachers-container .teacher .teacher-item {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    margin-bottom: 10px;
+    letter-spacing: 0.01em;
+    position: relative;
+    margin-left: 30px;
+}
+
+#teachers-container .teacher .teacher-item-point {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: #b26e77;
+    border-radius: 50%;
+    top: 7px;
+    left: -30px;
+}
+
+#teachers-container .teacher .teacher-image {
+    background-size: cover;
+    background-position: center;
+    width: 409px;
+    border-radius: 0 20px 20px 0;
+}
+
+#teachers-nav {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.nav {
+    font-size: 23px;
+    font-family: "YesevaOneRegular", sans-serif;
+    color: rgb(178, 110, 119);
+    position: relative;
+    right: 18px;
+}
+
+/* for slick teachers arrows: */
+.slick-prev:before {
+    content: url("../image/prev.svg");
+    opacity: 0.8;
+}
+
+.slick-next:before {
+    content: url("../image/next.svg");
+    opacity: 0.8;
+}
+
+.slick-prev::after {
+    content: '/';
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    color: rgb(178, 110, 119);
+    top: 50%;
+    left: 35px;
+    margin-left: 9px;
+    cursor: initial;
+    pointer-events: none; /* чтобы обработчик клика не действовал на псевдоэлемент */
+}
+
+.slick-next::after {
+    content: '7';
+    font-size: 16px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    cursor: initial;
+    pointer-events: none;
+}
+
+.slick-next:hover:before, .slick-prev:hover:before {
+    opacity: 0.6;
+}
+
+.slick-next:focus:before, .slick-prev:focus:before {
+    opacity: 1;
+}
+
+.slick-next {
+    left: calc(50% + 28px);
+    z-index: 2;
+}
+
+.slick-prev {
+    left: calc(50% - 49px);
+    z-index: 2;
+}
+
+#reviews-container {
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-bottom: 180px;
+}
+
+#reviews-container .block-title {
+    margin: 0 auto 60px auto;
+    max-width: 739px;
+}
+
+#reviews {
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    border-radius: 20px;
+}
+
+#reviews-container .review {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#reviews-container .review .review-image {
+    background-size: cover;
+    background-position: center;
+    width: 473px;
+    border-radius: 20px 0 0 20px;
+}
+
+#reviews-container .review .review-text {
+    max-width: 502px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+    padding-right: 65px;
+}
+
+#reviews-container .review .review-title {
+    font-size: 23px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+}
+
+#reviews-container .review .review-description {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    letter-spacing: 0.01em;
+    height: 186px;
+}
+
+#reviews-nav {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* for slick reviews arrows: */
+#reviews-nav .nav {
+    right: 23px;
+}
+
+#reviews-nav .slick-next {
+    left: calc(50% + 33px);
+}
+
+#reviews-nav .slick-next::after {
+    content: '15';
+    left: -21px;
+}
+
+#reviews-nav .slick-prev {
+    left: calc(50% - 59px);
+}
+
+#reviews-nav .slick-prev::after {
+    left: 35px;
+    margin-left: 19px;
+}
+
+#order-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 175px;
+    display: grid;
+    grid-template-columns: 370px 1fr 1fr;
+    grid-template-rows: 148px 1fr;
+}
+
+#order-container .block-title {
+    text-align: left;
+}
+
+#order-container #order-text {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    max-width: 344px;
+    letter-spacing: 0.01em;
+    margin-top: 25px;
+    position: relative;
+}
+
+#order-container #order-text img {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 90px;
+    animation: rotate_order_arrow 4s linear infinite;
+}
+
+@keyframes rotate_order_arrow {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+#order-container #order-image {
+    position: relative;
+    text-align: center;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-self: center;
+}
+
+#order-container #order-image img {
+    max-width: 442px;
+    position: absolute;
+    top: -215px;
+    left: -60px;
+}
+
+#order-container #order-image #ballet-book {
+    max-width: 250px;
+    z-index: 1;
+    top: -160px;
+    left: 35px;
+    transition: .5s all;
+}
+
+#order-container #order-image #ballet-book:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+
+#order-form {
+    grid-row: 1/3;
+    grid-column: 3;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    padding: 40px 48px 45px 48px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+#order-form .logo {
+    display: inline-flex;
+    margin-bottom: 27px;
+}
+
+.logo object {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.btn-form-transparent {
+    border-width: 1px;
+    border-color: rgb(131, 109, 115);
+    border-style: solid;
+    width: 100%;
+    border-radius: 26px;
+    outline: none;
+    padding: 15px 23px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    letter-spacing: 0.01em;
+    color: rgb(131, 109, 115);
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+}
+
+.btn-form-transparent::placeholder {
+    color: rgb(131, 109, 115);
+}
+
+.btn-form-transparent:hover, #order-form .btn-form-transparent:hover::placeholder {
+    border-color: rgb(165, 142, 149);
+    color: rgb(165, 142, 149);
+}
+
+.btn-form-transparent:focus, #order-form .btn-form-transparent:focus::placeholder {
+    color: rgb(91, 76, 80);
+    border-color: rgb(91, 76, 80);
+}
+
+.btn-form-transparent:disabled, #order-form .btn-form-transparent:disabled::placeholder {
+    color: rgb(188, 182, 184);
+    border-color: rgb(188, 182, 184);
+}
+
+#order-form #order-action button {
+    padding: 15px 23px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 26px;
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.01em;
+}
+
+/* for selectmenu */
+#order-form .ui-selectmenu-button.ui-button {
+    width: 100%;
+}
+
+#order-form .ui-button {
+    border-width: 1px;
+    border-color: rgb(131, 109, 115);
+    border-style: solid;
+    width: 100%;
+    border-radius: 26px;
+    outline: none;
+    padding: 15px 23px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    letter-spacing: 0.01em;
+    color: rgb(131, 109, 115);
+    background: transparent;
+}
+
+#order-form .ui-button:hover {
+    background: transparent;
+    border-color: rgb(165, 142, 149);
+    color: rgb(165, 142, 149);
+}
+
+#order-form .ui-button:focus {
+    background: transparent;
+    color: rgb(91, 76, 80);
+    border-color: rgb(91, 76, 80);
+}
+
+#order-form #select-button.ui-button.ui-selectmenu-button-open {
+    border-radius: 26px 26px 0 0;
+    border-bottom: 1px solid #e4e5eb;
+}
+
+#order-form .ui-button .ui-icon {
+    background-image: url(../image/down.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    position: relative;
+    top: 2px;
+}
+
+#order-form #select-button.ui-button.ui-selectmenu-button-open .ui-icon {
+    background-image: url(../image/up.png);
+}
+
+#order-form .ui-button:hover .ui-icon {
+    opacity: 0.6;
+}
+
+#order-form .ui-button:focus .ui-icon {
+    opacity: 1;
+}
+
+.ui-widget {
+    font-family: "NunitoRegular", sans-serif;
+    font-size: 16px;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 0 0 26px 26px;
+    border-top: 0;
+}
+
+.ui-widget-content {
+    border: 1px solid #ddd;
+    background: #fff;
+    color: rgb(131, 109, 115);
+    padding: 10px 17px;
+}
+
+.ui-widget-content.ui-menu .ui-menu-item:last-child {
+    margin-bottom: 10px;
+}
+
+.ui-widget-content .ui-state-active {
+    background: transparent;
+    color: #5b4c50;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.ui-state-disabled {
+    display: none;
+}
+
+#questions-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-bottom: 105px;
+}
+
+#questions-container .block-title {
+    max-width: 796px;
+    margin: 0 auto 60px auto;
+}
+
+#questions-container .question-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#questions-container .question-flex .question-image {
+    width: 410px;
+    align-self: flex-start;
+}
+
+#questions-container .question-flex .question-image img {
+    max-width: 100%;
+}
+
+#question-image-first {
+    justify-self: flex-end;
+}
+
+#question-image-second {
+    margin-top: 30px;
+}
+
+/* accordion */
+#questions-container .question-flex .question-accordion .question-text {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8.7px 1.3px rgba(178, 110, 119, 0.13);
+    width: 570px;
+    font-size: 18px;
+    font-family: "YesevaOneRegular", serif;
+    color: rgb(178, 110, 119);
+    border: 0;
+    margin-bottom: 15px;
+    padding: 22px 90px 22px 30px;
+    box-sizing: border-box;
+    transition: all 0.4s linear;
+    letter-spacing: 0.02em;
+}
+
+#questions-container .question-flex .question-accordion .question-text.ui-state-active {
+    border-radius: 20px 20px 0 0;
+}
+
+#questions-container .question-flex .question-accordion .question-text::after {
+    content: url("../image/question_next_default.svg");
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 9px);
+    right: 30px;
+}
+
+#questions-container .question-flex .question-accordion .question-text.ui-state-active::after {
+    content: url("../image/question_next_default.svg");
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 7px);
+    right: 28px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#questions-container .question-flex .question-accordion .question-text:hover::after,
+#questions-container .question-flex .question-accordion .question-text.question-text.ui-state-active:hover::after {
+    content: url("../image/question_next_hover.svg");
+}
+
+#questions-container .question-flex .question-accordion .question-text:disabled::after,
+#questions-container .question-flex .question-accordion .question-text.question-text.ui-state-active:disabled::after {
+    content: url("../image/question_next_disabled.svg");
+}
+
+#questions-container .question-flex .question-accordion .question-answer.ui-accordion-content {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.2;
+    width: 570px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8.7px 1.3px rgba(178, 110, 119, 0.13);
+    border-radius: 20px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: relative;
+    box-sizing: border-box;
+    border: 0;
+    border-top: 1px solid #e4e5eb;
+    transition: border-radius 0.4s linear;
+}
+
+#questions-container .question-flex .question-accordion .question-answer.ui-accordion-content.ui-accordion-content-active {
+    border-radius: 0 0 20px 20px;
+}
+
+#contacts-container {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 180px;
+}
+
+#contacts-container #contacts {
+    width: 505px;
+    border-radius: 26px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    padding: 55px 84px 60px 84px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -44px;
+    left: 65px;
+    z-index: 2;
+}
+
+#contacts-container #contacts .block-title {
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+#contacts-container #contacts .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+#contacts-container #contacts .contact-item object {
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+}
+
+#contacts-container #contacts .contact-item #letter {
+    padding-top: 4px;
+}
+
+#contacts-container #contacts .contact-item span {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.313;
+    max-width: 283px;
+}
+
+#contacts-container #contacts .call-action {
+    margin-top: 25px;
+}
+
+#contacts-container #contacts .call-action .btn-transparent {
+    width: 227px;
+    font-family: "NunitoBold", sans-serif;
+    letter-spacing: 0.02em;
+}
+
+#contacts-container #contacts #socials {
+    display: flex;
+    margin-top: 40px;
+}
+
+#contacts-container #contacts #socials .social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #b26e77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: .5s all;
+}
+
+#contacts-container #contacts #socials .social:last-child {
+    margin-right: 0;
+}
+
+#contacts-container #contacts #socials .social svg {
+    width: 25px;
+    height: 25px;
+    fill: #b26e77;
+}
+
+#contacts-container #contacts #socials .social:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+#contacts-container #contacts #socials .social:hover, #contacts-container #contacts #socials .social:hover svg {
+    fill: #cf989f;
+    border-color:#cf989f;
+}
+
+#contacts-container #contacts #socials .social:active, #contacts-container #contacts #socials .social:active svg {
+    fill: #8a5158;
+    border-color:#8a5158;
+}
+
+#contacts-container #contacts #socials .social:disabled, #contacts-container #contacts #socials .social:disabled svg {
+    fill: #bcb6b8;
+    border-color:#bcb6b8;
+}
+
+#contacts-container #map-mask {
+    width: 100%;
+    height: 450px;
+    border-radius: 26px;
+    background-color: #b26e77;
+    opacity: 0.17;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* чтобы через div можно было двигать карту */
+}
+
+#contacts-container #map {
+    margin-top: 44px;
+    border-radius: 26px;
+}
+
+#contacts-container #map iframe {
+    border-radius: 26px;
+    height: 450px;
+}
+
+#footer {
+    max-width: 1110px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer #rights {
+    font-size: 14px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(164, 164, 164);
+}
+
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #00000080;
+    z-index: 9999;
+    display: none; /* в обработчике применить flex */
+    align-items: center;
+    justify-content: center;
+}
+
+#reservation-container #reservation {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    width: 790px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#reservation-container #reservation #reservation-image {
+    width: 380px;
+    border-radius: 12px 0 0 12px;
+    background-size: cover;
+    background-position: center;
+}
+
+#reservation-container #reservation #reservation-description {
+    text-align: center;
+    padding: 34px 40px 34px 0;
+    max-width: 330px;
+}
+
+#reservation-container #reservation #reservation-description .logo {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 11px;
+}
+
+#reservation-container #reservation #reservation-description .reservation-text {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.375;
+    padding: 5px 0;
+}
+
+.popup-cancel {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #836d73;
+    cursor: pointer;
+}
+
+.popup-cancel:hover {
+    fill: #a58e95;
+}
+
+.popup-cancel:active {
+    fill: #5b4c50;
+}
+
+.popup-cancel:disabled {
+    fill: #bcb6b8;
+}
+
+#call-container #call {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 26px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    width: 790px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-image {
+    width: 380px;
+    border-radius: 26px 0 0 26px;
+    background-size: cover;
+    background-position: center;
+}
+
+.call-description {
+    max-width: 318px;
+    text-align: center;
+    padding: 40px 45px 40px 0;
+}
+
+#call-container #call .logo {
+    justify-content: center;
+}
+
+.call-text {
+    font-size: 16px;
+    font-family: "NunitoRegular", sans-serif;
+    color: rgb(131, 109, 115);
+    line-height: 1.375;
+    margin-top: 25px;
+}
+
+#call-container #call #call-form {
+    margin-top: 25px;
+}
+
+#call-container #call #call-form input {
+    padding: 14px 23px;
+}
+
+#call-container #call button {
+    padding: 15px 23px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 26px;
+    font-size: 16px;
+    font-family: "NunitoSemiBold", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.01em;
+}
+
+#call-container #call-send {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 26px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    width: 790px;
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#call-container #call-send .call-image {
+    height: 386px;
+}
+
+#call-container #call-send .logo {
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+#call-container #call-send .call-text {
+    margin-top: 10px;
+}
+
+.error-input {
+    color: red;
+    font-size: 11px;
+    text-align: left;
+    margin-left: 25px;
+    display: none;
+    font-family: "NunitoBold", sans-serif;
+    line-height: 14.5px;
+}
+
+#header-icons {
+    display: flex;
+    align-items: center;
+}
+
+#burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    fill: #b26e77;
+}
+
+#mobile-call {
+    display: none;
+    width: 22px;
+    height: 22px;
+    fill: #b26e77;
+    margin-right: 35px;
+}
+
+#call-container .call-image.call-image-mobile {
+    display: none;
+}
+
+#mobile-menu-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #00000070;
+    z-index: 9999;
+    display: none; /* в обработчике применить flex */
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#mobile-menu-container #mobile-menu {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 13.05px 1.95px rgba(178, 110, 119, 0.13);
+    width: 171px;
+    border-radius: 0 0 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#mobile-menu-container #mobile-menu .block-title {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#mobile-menu-container #mobile-menu a {
+    display: inline-flex;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+#mobile-menu-container #mobile-menu a:last-child {
+    margin-bottom: 0;
+}
+
+#menu-cancel {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 24px;
+    right: 22px;
+    fill: #b26e77;
+    cursor: pointer;
+}

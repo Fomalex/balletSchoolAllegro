@@ -1,0 +1,1238 @@
+/* 1024 до 1149px */
+@media screen and (max-width: 1149px) {
+    #header, #main, #features-container, #advantages-container, #programs-container,
+    #teachers-container, #reviews-container, #order-container, #questions-container,
+    #contacts-container, #contacts-container #map-mask, #footer {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #header #menu {
+        max-width: 540px;
+    }
+
+    #main-image img {
+        max-width: 500px;
+    }
+
+    #advantages .advantage {
+        width: 510px;
+    }
+
+    #advantages .advantage .advantage-image {
+        height: 375px;
+    }
+
+    #advantages .advantage .advantage-image img {
+        max-width: 295px;
+    }
+
+    #programs .program .program-text {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        padding-left: 50px;
+        max-width: 520px;
+    }
+
+    #reviews-container .review .review-text {
+        padding-right: 40px;
+        max-width: 480px;
+    }
+
+    #order-container #order-form {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .ui-menu .ui-menu-item-wrapper {
+        padding-right: 0;
+    }
+
+    #questions-container .question-flex .question-accordion .question-text {
+        width: 550px;
+        padding-right: 50px;
+    }
+
+    #questions-container .question-flex .question-accordion .question-answer.ui-accordion-content {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #main-image {
+        left: -122px
+    }
+
+    #advantages .advantage {
+        width: 490px;
+    }
+
+    #advantages .advantage.advantage-up .advantage-text .advantage-description {
+        max-width: 230.5px;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        padding-left: 40px;
+        max-width: 494px;
+    }
+
+    #reviews-container .review .review-text {
+        padding-right: 20px;
+        max-width: 470px;
+    }
+
+    #order-container #order-image {
+        left: -30px;
+    }
+}
+
+/* 768 до 1023 */
+@media screen and (max-width: 1023px) {
+    #header {
+        max-width: 728px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #header #menu {
+        max-width: 520px;
+        order: 3;
+        margin: 20px auto 0 auto;
+    }
+
+    #main {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    #main #main-image {
+        max-width: 600px;
+        left: initial;
+        bottom: 530px;
+    }
+
+    #main #main-info #main-title {
+        padding-bottom: 380px;
+        margin-bottom: 0;
+    }
+
+    #bg {
+        padding-bottom: 300px;
+    }
+
+    #features-container {
+        margin-bottom: 90px;
+    }
+
+    #features {
+        max-width: 668px;
+        justify-content: space-evenly;
+        margin: 20px auto 0 auto;
+    }
+
+    #advantages-container {
+        padding-bottom: 120px;
+    }
+
+    #advantages .advantage {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #advantages .advantage .advantage-text {
+        max-width: 600px;
+        order: 2;
+    }
+
+    #advantages .advantage .advantage-text .advantage-title {
+        max-width: 100%;
+    }
+
+    #advantages .advantage.advantage-up .advantage-text .advantage-description {
+        max-width: 100%;
+    }
+
+    #advantages .advantage.advantage-up {
+        top: 0;
+    }
+
+    #advantages .advantage .advantage-image {
+        order: 1;
+        margin: 20px 0;
+    }
+
+    #advantages .advantage .advantage-image img.img-right {
+        right: 0;
+    }
+
+    #programs-container {
+        max-width: 728px;
+        padding-bottom: 120px;
+    }
+
+    #programs-container .block-title, #teachers-container .block-title {
+        max-width: 600px;
+    }
+
+    #programs-container #programs ul li {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    #programs .program {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 728px;
+        margin: 0 auto;
+    }
+
+    #programs .program .program-image {
+        width: 100%;
+        height: 890px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #programs .program .program-text {
+        max-width: 600px;
+    }
+
+    #teachers-container {
+        max-width: 728px;
+        padding-bottom: 120px;
+    }
+
+    #teachers .teacher {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 728px;
+        margin: 0 auto;
+    }
+
+    #teachers-container .teacher .teacher-image {
+        order: 1;
+        width: 100%;
+        height: 960px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        order: 2;
+        max-width: 600px;
+        padding-left: 0;
+    }
+
+    #reviews-container {
+        max-width: 728px;
+        padding-bottom: 120px;
+    }
+
+    #reviews-container .review {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 728px;
+        margin: 0 auto;
+    }
+
+    #reviews-container .review .review-image {
+        width: 100%;
+        height: 534px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #reviews-container .review .review-text {
+        max-width: 600px;
+        padding-right: 0;
+    }
+
+    #order-container {
+        max-width: 728px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-row-gap: 40px;
+        justify-items: center;
+        padding-bottom: 120px;
+    }
+
+    #order-container .block-title {
+        text-align: center;
+        max-width: 600px;
+        order: 1;
+        grid-column: 1/3;
+    }
+
+    #order-container #order-text {
+        order: 2;
+        margin-top: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    #order-container #order-text img {
+        position: relative;
+        top: 10px;
+        left: 130px;
+    }
+
+    #order-container #order-image {
+        grid-column: unset;
+        grid-row: unset;
+        order: 3;
+        height: 450px;
+        width: 300px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #order-container #order-image #ballet-book {
+        top: 50px;
+        left: 25px;
+    }
+
+    #order-container #order-image img {
+        top: -10px;
+    }
+
+    #order-container #order-form {
+        order: 4;
+        grid-row: unset;
+        box-sizing: border-box;
+        width: 60%;
+        grid-column: 1/3;
+    }
+
+    #questions-container {
+        max-width: 728px;
+        padding-bottom: 100px;
+    }
+
+    #questions-container .question-flex {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    #questions-container .question-flex .question-accordion {
+        order: 2;
+    }
+
+    #questions-container .question-flex .question-accordion .question-text {
+        width: 100%;
+        max-width: 728px;
+    }
+
+    #questions-container .question-flex .question-accordion .question-answer.ui-accordion-content {
+        width: 100%;
+        max-width: 728px;
+    }
+
+    #questions-container .question-flex .question-image {
+        width: 100%;
+        order: 1;
+        max-width: 728px;
+        margin-bottom: 30px;
+    }
+
+    #question-image-second {
+        display: none;
+    }
+
+    #contacts-container {
+        max-width: 728px;
+        padding-bottom: 100px;
+    }
+
+    #contacts-container #contacts {
+        padding: 40px;
+        width: 417px;
+        top: -32px;
+    }
+
+    #footer {
+        max-width: 728px;
+    }
+
+    #call-container #call, #call-container #call-send, #reservation-container #reservation {
+        width: 728px;
+    }
+
+    .call-description {
+        padding: 40px 30px;
+    }
+
+    #reservation-container #reservation #reservation-description {
+        padding: 34px 10px;
+    }
+}
+
+
+/* 580 до 767 */
+@media screen and (max-width: 767px) {
+    #header #menu {
+        max-width: 80%;
+    }
+
+    #main {
+        margin-top: 80px;
+    }
+
+    #main-info #main-title {
+        font-size: 45px;
+        max-width: 582px;
+        margin: 0 auto;
+    }
+
+    #main-info #main-text {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #main #main-image {
+        bottom: 490px;
+    }
+
+    #bg {
+        padding-bottom: 190px;
+    }
+
+    #features-container {
+        margin-bottom: 80px;
+    }
+
+    .feature {
+        margin: 20px 0;
+    }
+
+    .block-title {
+        font-size: 35px;
+    }
+
+    #advantages-container {
+        padding-bottom: 100px;
+    }
+
+    #programs-container {
+        padding-bottom: 100px;
+    }
+
+    #programs-container #programs {
+        margin-top: 40px;
+    }
+
+    #programs-container #programs ul {
+        margin-bottom: 30px;
+    }
+
+    #teachers-container {
+        padding-bottom: 100px;
+    }
+
+    #teachers-container #teachers {
+        margin-top: 40px;
+    }
+
+    #teachers-nav, #reviews-nav {
+        margin-top: 40px;
+    }
+
+    #reviews-container {
+        padding-bottom: 100px;
+    }
+
+    #reviews-container .block-title {
+        margin-bottom: 40px;
+    }
+
+    #order-container {
+        padding-bottom: 100px;
+        grid-template-columns: auto auto;
+    }
+
+    #order-container #order-text {
+        justify-self: flex-start;
+    }
+
+    #order-container #order-text img {
+        width: 60px;
+    }
+
+    #order-container #order-image {
+        height: 350px;
+        width: 0;
+        left: -200px;
+    }
+
+    #order-container #order-image #ballet-book {
+        max-width: 200px;
+        top: 37px;
+        left: 7px;
+    }
+
+    #order-container #order-image img {
+        max-width: 350px;
+    }
+
+    #questions-container .block-title {
+        margin-bottom: 40px;
+    }
+
+    #contacts-container #contacts {
+        width: 382px;
+        padding: 30px;
+    }
+
+    #contacts-container #contacts .call-action {
+        text-align: center;
+    }
+
+    #contacts-container #contacts #socials {
+        justify-content: center;
+    }
+
+    #contacts-container #map iframe {
+        height: 425px;
+    }
+
+    #contacts-container {
+        padding-bottom: 90px;
+    }
+
+    #contacts-container #map-mask {
+        height: 425px;
+    }
+
+    #footer {
+        margin: 40px 0;
+    }
+
+    .popup-container {
+        overflow: scroll;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    #reservation-container #reservation,
+    #call-container #call,
+    #call-container #call-send {
+        flex-direction: column;
+        margin: 0 20px;
+        width: 540px;
+    }
+
+    #reservation-container #reservation #reservation-image {
+        width: 100%;
+        height: 380px;
+        border-radius: 0 0 20px 20px;
+        order: 2;
+        background-size: cover;
+    }
+
+    #reservation-container #reservation #reservation-description {
+        padding: 40px 25px 20px 25px;
+        max-width: 100%;
+    }
+
+    .call-image-main {
+        display: none;
+    }
+
+    #call-container .call-image.call-image-mobile {
+        display: block;
+    }
+
+    .call-image {
+        height: 410px;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        order: 2;
+        background-size: cover;
+    }
+
+    .call-description {
+        padding: 35px 50px 20px 50px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    #programs .program .program-text, #teachers-container .teacher .teacher-text, #reviews-container .review .review-text {
+        padding: 30px;
+    }
+
+    #order-container #order-form {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #order-container #order-text {
+        max-width: 236px;
+    }
+
+    #order-container #order-text img {
+        left: 75px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    #teachers-container .teacher .teacher-text {
+        height: 485px;
+    }
+
+    #reviews-container .review .review-description {
+        height: 205px;
+    }
+}
+
+
+/* 480 до 579 */
+@media screen and (max-width: 579px) {
+    #header .call-action, #header #menu {
+        display: none;
+    }
+
+    #header #burger, #header #mobile-call {
+        display: flex;
+    }
+
+    #main {
+        margin-top: 60px;
+    }
+
+    #main #main-info #main-title {
+        font-size: 42px;
+        padding-bottom: 320px;
+    }
+
+    #main #main-image {
+        bottom: 435px;
+    }
+
+    #main-image img {
+        max-width: 450px;
+    }
+
+    #main-info #main-text {
+        font-size: 14px;
+    }
+
+    #bg {
+        height: 570px;
+        padding-bottom: 185px;
+    }
+
+    #main-action span {
+        font-size: 14.5px;
+        margin-left: 21px;
+    }
+
+    #main-action button {
+        width: 290px;
+        margin: 0 auto;
+        height: 48px;
+    }
+
+    #main-action button div {
+        width: 35px;
+        height: 35px;
+    }
+
+    #main-action button div svg {
+        width: 22px;
+        height: 22px;
+        top: calc(50% - 11px);
+        left: calc(50% - 11px);
+    }
+
+    .block-title {
+        font-size: 29px;
+    }
+
+    .feature {
+        width: 140px;
+        align-items: flex-start;
+        text-align: left;
+        margin: 20px;
+    }
+
+    .feature .feature-text {
+        font-size: 14px;
+    }
+
+    .feature .feature-img {
+        margin: 0 0 17px 0;
+    }
+
+    #features-container {
+        margin-bottom: 60px;
+    }
+
+    #advantages .advantage .advantage-text .advantage-title {
+        font-size: 16px;
+    }
+
+    #advantages .advantage .advantage-text .advantage-description {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #advantages .advantage .advantage-image {
+        margin: 10px 0;
+    }
+
+    #advantages-nav {
+        margin-top: 20px;
+    }
+
+    #advantages-container {
+        padding-bottom: 80px;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    .slick-next::after {
+        font-size: 12px;
+        top: 65%;
+    }
+
+    .slick-next {
+        left: calc(50% + 24px);
+        width: 16px;
+    }
+
+    .slick-prev {
+        left: calc(50% - 45px);
+        width: 16px;
+    }
+
+    .slick-prev::after {
+        margin-left: 5px;
+    }
+
+    #reviews-nav .slick-next {
+        left: calc(50% + 29px);
+    }
+
+    #reviews-nav .slick-prev {
+        left: calc(50% - 55px);
+    }
+
+    #reviews-nav .slick-prev::after {
+        margin-left: 15px;
+    }
+
+    #programs-container #programs {
+        margin-top: 30px;
+    }
+
+    #programs-container .block-title {
+        text-align: left;
+    }
+
+    #programs-container #programs ul li a {
+        font-size: 14px;
+        padding: 11px 25px;
+    }
+
+    #programs .program .program-title {
+        font-size: 18px;
+    }
+
+    #programs .program .program-description {
+        font-size: 14px;
+        margin: 15px 0;
+        line-height: 1.357;
+    }
+
+    #programs .program .program-items {
+        margin-bottom: 20px;
+    }
+
+    #programs .program .program-items .program-item .program-item-title {
+        font-size: 14px;
+        margin-right: 7px;
+    }
+
+    #programs .program .program-items .program-item .program-item-text {
+        font-size: 14px;
+        max-width: 167px;
+    }
+
+    #programs .program .program-items .program-item .program-item-image {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+    #programs .program .program-text,
+    #teachers-container .teacher .teacher-text, #reviews-container .review .review-text {
+        padding: 20px;
+    }
+
+    #programs .program .program-action button {
+        width: 265px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #programs-container {
+        padding-bottom: 80px;
+    }
+
+    #teachers-container .teacher .teacher-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #teachers-container .teacher .teacher-item {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    #teachers-container .teacher .teacher-item-point {
+        width: 5px;
+        height: 5px;
+        left: -20px;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        height: 365px;
+    }
+
+    #teachers-container {
+        padding-bottom: 80px;
+    }
+
+    #reviews-container .review .review-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #reviews-container .review .review-description {
+        font-size: 14px;
+        line-height: 1.357;
+        height: 185px;
+    }
+
+    #reviews-container {
+        padding-bottom: 80px;
+    }
+
+    #order-container {
+        padding-bottom: 80px;
+        grid-template-columns: 1fr;
+    }
+
+    #order-container .block-title {
+        order: 1;
+        grid-column: 1;
+    }
+
+    #order-container #order-text {
+        order: 3;
+        justify-self: center;
+        max-width: 80%;
+        text-align: left;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ui-widget {
+        font-size: 14px;
+    }
+
+    .ui-widget-content {
+        padding: 17px;
+    }
+
+    .btn-form-transparent {
+        font-size: 14px;
+        padding: 17px 30px;
+    }
+
+    #order-container #order-text img {
+        position: relative;
+        width: 48px;
+        top: 10px;
+        left: calc(50% - 40px);
+    }
+
+    @keyframes rotate_order_arrow {
+        0% {
+            transform: rotate(83deg);
+        }
+        50% {
+            transform: rotate(73deg);
+        }
+        100% {
+            transform: rotate(83deg);
+        }
+    }
+
+    #order-container #order-image {
+        order: 4;
+        height: 300px;
+        width: 300px;
+        left: -18px;
+        top: -20px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    #order-container #order-image #ballet-book {
+        top: 20px;
+        left: 65px;
+    }
+
+    #order-container #order-image img {
+        top: -25px;
+        left: -5px;
+    }
+
+    #order-container #order-form {
+        order: 2;
+        width: 80%;
+        grid-column: 1;
+    }
+
+    #order-form .ui-button .ui-icon {
+        width: 14px;
+    }
+
+    #order-form .ui-button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .ui-widget-content {
+        padding-left: 25px;
+    }
+
+    #questions-container {
+        padding-bottom: 65px;
+    }
+
+    #questions-container .question-flex .question-accordion .question-text {
+        font-size: 14px;
+        padding: 13px 50px 13px 15px;
+    }
+
+    #questions-container .question-flex .question-accordion .question-answer.ui-accordion-content {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #questions-container .question-flex .question-accordion .question-text::after {
+        width: 14px;
+        height: 14px;
+        top: calc(50% - 7px);
+        right: 15px;
+    }
+
+    #questions-container .question-flex .question-accordion .question-text.ui-state-active::after {
+        width: 14px;
+        height: 14px;
+        top: calc(50% - 6px);
+        right: 15px;
+    }
+
+    #contacts-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        align-items: center;
+    }
+
+    #contacts-container #contacts {
+        position: relative;
+        width: 100%;
+        max-width: 420px;
+        top: 0;
+        left: 0;
+        border-radius: 26px 26px 0 0;
+        padding: 30px 23px 40px 23px;
+    }
+
+    #contacts-container #contact-items {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 225px;
+    }
+
+    #contacts-container #contacts .contact-item {
+        padding: 8px 0;
+        align-items: flex-start;
+    }
+
+    #contacts-container #contacts .contact-item object {
+        width: 19px;
+        height: 19px;
+    }
+
+    #contacts-container #contacts .contact-item span {
+        font-size: 14px;
+        max-width: 184px;
+    }
+
+    #contacts-container #map {
+        margin-top: 0;
+        border-radius: 0 0 26px 26px;
+        max-width: 420px;
+        width: 100%;
+    }
+
+    #contacts-container #map iframe {
+        border-radius: 0 0 26px 26px;
+        height: 150px;
+    }
+
+    #contacts-container #map-mask {
+        border-radius: 0 0 26px 26px;
+        height: 150px;
+    }
+
+    #footer {
+        margin: 30px 0;
+    }
+
+    #reservation-container #reservation #reservation-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    #reservation-container #reservation #reservation-description .reservation-text {
+        font-size: 14px;
+    }
+
+    .call-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    #header, #main, #features-container, #advantages-container, #programs-container,
+    #teachers-container, #reviews-container, #order-container, #questions-container,
+    #contacts-container, #contacts-container #map-mask, #footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        height: 415px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    #bg {
+        padding-bottom: 235px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    #main-image img {
+        max-width: 390px;
+    }
+
+    #main #main-info #main-title {
+        padding-bottom: 300px;
+    }
+
+    #main #main-image {
+        bottom: 415px;
+    }
+
+    #reviews-container .review .review-description {
+        height: 200px;
+    }
+}
+
+/* 375 - 424px */
+@media screen and (max-width: 424px) {
+    #bg {
+        padding-bottom: 210px;
+    }
+
+    #main-image img {
+        max-width: 345px;
+    }
+
+    #main #main-info #main-title {
+        padding-bottom: 275px;
+    }
+
+    #main #main-image {
+        bottom: 390px;
+    }
+
+    .feature {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        height: 435px;
+    }
+
+    #order-container #order-form {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+    #order-container #order-text {
+        max-width: 100%;
+        line-height: 1.357;
+    }
+
+    .call-description {
+        padding: 30px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    #teachers-container .teacher .teacher-text {
+        height: 455px;
+    }
+
+    #reviews-container .block-title {
+        font-size: 23px;
+    }
+
+    #reviews-container .review .review-description {
+        height: 220px;
+    }
+
+    #footer {
+        flex-wrap: wrap;
+    }
+
+    #footer #rights {
+        width: 100%;
+        margin-top: 9px;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    #teachers-container .teacher .teacher-text {
+        height: 475px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    #teachers-container .teacher .teacher-text {
+        height: 505px;
+    }
+}
+
+/* 320 - 374px */
+@media screen and (max-width: 374px) {
+    #bg {
+        padding-bottom: 170px;
+        overflow: hidden;
+    }
+
+    #main #main-info #main-title {
+        padding-bottom: 215px;
+        max-width: 293px;
+    }
+
+    #main-info #main-text {
+        max-width: 293px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main-image img {
+        max-width: 290px;
+    }
+
+    #main #main-image {
+        bottom: 360px;
+    }
+
+    #features {
+        justify-content: space-around;
+    }
+
+    #programs-container .block-title {
+        font-size: 25px;
+    }
+
+    #programs-container #programs ul li a {
+        padding: 11px 20px;
+    }
+
+    #programs .program .program-items .program-item {
+        margin-bottom: 15px;
+    }
+
+    #programs .program .program-items .program-item .program-item-text {
+        max-width: 143px;
+    }
+
+    #programs .program .program-items .program-item .program-item-text span {
+        max-width: 88px;
+    }
+
+    #programs .program .program-items .program-item .program-item-text span:first-child {
+        max-width: 85px;
+    }
+
+    #teachers-container .block-title {
+        font-size: 25px;
+    }
+
+    #teachers-container .teacher .teacher-text, #reviews-container .review .review-text {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #order-container {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #reviews-container .review .review-description {
+        height: 240px;
+    }
+
+    #teachers-container .teacher .teacher-text {
+        height: 525px;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    #teachers-container .teacher .teacher-text {
+        height: 545px;
+    }
+
+    #reviews-container .review .review-description {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 338px) {
+    #teachers-container .teacher .teacher-text {
+        height: 565px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    #reviews-container .review .review-description {
+        height: 280px;
+    }
+}
