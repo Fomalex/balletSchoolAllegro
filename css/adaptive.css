@@ -587,8 +587,8 @@
         height: 485px;
     }
 
-    #reviews-container .review .review-description {
-        height: 205px;
+    #reviews-container .review .review-text {
+        height: 261px;
     }
 }
 
@@ -600,7 +600,7 @@
     }
 
     #header #burger, #header #mobile-call {
-        display: flex;
+        display: block;
     }
 
     #main {
@@ -821,7 +821,10 @@
     #reviews-container .review .review-description {
         font-size: 14px;
         line-height: 1.357;
-        height: 185px;
+    }
+
+    #reviews-container .review .review-text {
+        height: 241px;
     }
 
     #reviews-container {
@@ -1055,8 +1058,8 @@
         bottom: 415px;
     }
 
-    #reviews-container .review .review-description {
-        height: 200px;
+    #reviews-container .review .review-text {
+        height: 256px;
     }
 }
 
@@ -1107,8 +1110,8 @@
         font-size: 23px;
     }
 
-    #reviews-container .review .review-description {
-        height: 220px;
+    #reviews-container .review .review-text {
+        height: 276px;
     }
 
     #footer {
@@ -1202,8 +1205,8 @@
 }
 
 @media screen and (max-width: 362px) {
-    #reviews-container .review .review-description {
-        height: 240px;
+    #reviews-container .review .review-text {
+        height: 296px;
     }
 
     #teachers-container .teacher .teacher-text {
@@ -1216,8 +1219,8 @@
         height: 545px;
     }
 
-    #reviews-container .review .review-description {
-        height: 260px;
+    #reviews-container .review .review-text {
+        height: 316px;
     }
 }
 
@@ -1228,7 +1231,7 @@
 }
 
 @media screen and (max-width: 330px) {
-    #reviews-container .review .review-description {
-        height: 280px;
+    #reviews-container .review .review-text {
+        height: 336px;
     }
 }
