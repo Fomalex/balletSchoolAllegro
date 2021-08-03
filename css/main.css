@@ -43,6 +43,11 @@ body {
     display: flex;
     text-decoration: none;
     align-items: center;
+    outline: 0;
+}
+
+.logo:focus, .logo:active {
+    outline: 0;
 }
 
 .logo svg {
@@ -75,6 +80,7 @@ body {
     text-decoration: none;
     letter-spacing: 0.02em;
     transition: .5s all;
+    outline: 0;
 }
 
 #menu a:hover {
@@ -83,18 +89,22 @@ body {
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -webkit-transform: scale(1.1);
+    outline: 0;
 }
 
 #mobile-menu a:hover {
     color: rgb(165, 142, 149);
+    outline: 0;
 }
 
 #menu a:active, #mobile-menu a:active {
     color: rgb(91, 76, 80);
+    outline: 0;
 }
 
 #menu a:disabled, #mobile-menu a:disabled {
     color: rgb(188, 182, 184);
+    outline: 0;
 }
 
 .btn-transparent {
@@ -104,7 +114,7 @@ body {
     font-size: 14px;
     font-family: "NunitoSemiBold", sans-serif;
     color: rgb(178, 110, 119);
-    outline: none;
+    outline: 0;
     letter-spacing: 0.02em;
     cursor: pointer;
     background-color: transparent;
@@ -128,16 +138,19 @@ body {
 .btn-transparent:hover {
     color: rgb(207, 152, 159);
     border-color: rgb(207, 152, 159);
+    outline: 0;
 }
 
 .btn-transparent:active {
     color: rgb(138, 81, 88);
     border-color: rgb(138, 81, 88);
+    outline: 0;
 }
 
 .btn-transparent:disabled {
     color: rgb(188, 182, 184);
     border-color: rgb(188, 182, 184);
+    outline: 0;
 }
 
 #main {
@@ -173,6 +186,7 @@ body {
     text-decoration: none;
     width: 360px;
     display: inline-block;
+    outline: 0;
 }
 
 .btn-pink {
@@ -187,17 +201,18 @@ body {
 #main-action button {
     border-radius: 30px;
     width: 360px;
-    height: 60px;
     display: flex;
     align-items: center;
-    padding: 15px 8px;
+    padding: 8px;
     position: relative;
+    outline: 0;
 }
 
 .btn-pink:hover {
     background-image: -moz-linear-gradient(90deg, rgb(207, 152, 159) 0%, rgb(227, 191, 195) 71%);
     background-image: -webkit-linear-gradient(90deg, rgb(207, 152, 159) 0%, rgb(227, 191, 195) 71%);
     background-image: -ms-linear-gradient(90deg, rgb(207, 152, 159) 0%, rgb(227, 191, 195) 71%);
+    outline: 0;
 }
 
 #main-action button:hover div svg path {
@@ -208,6 +223,7 @@ body {
     background-image: -moz-linear-gradient(90deg, rgb(138, 81, 88) 0%, rgb(214, 163, 170) 71%);
     background-image: -webkit-linear-gradient(90deg, rgb(138, 81, 88) 0%, rgb(214, 163, 170) 71%);
     background-image: -ms-linear-gradient(90deg, rgb(138, 81, 88) 0%, rgb(214, 163, 170) 71%);
+    outline: 0;
 }
 
 #main-action button:active div svg path {
@@ -218,6 +234,7 @@ body {
     background-image: -moz-linear-gradient(90deg, rgb(188, 182, 184) 0%, rgb(227, 224, 225) 71%);
     background-image: -webkit-linear-gradient(90deg, rgb(188, 182, 184) 0%, rgb(227, 224, 225) 71%);
     background-image: -ms-linear-gradient(90deg, rgb(188, 182, 184) 0%, rgb(227, 224, 225) 71%);
+    outline: 0;
 }
 
 #main-action button:disabled div svg path {
@@ -230,7 +247,6 @@ body {
     position: absolute;
     top: calc(50% - 13.5px);
     left: calc(50% - 13.5px);
-    vertical-align: middle;
     fill: #b26e77;
     animation: scale_svg 2s linear infinite;
 }
@@ -365,12 +381,22 @@ object img {
     width: 540px;
     align-items: center;
     justify-content: space-between;
+    outline: 0;
+}
+
+#advantages .advantage:hover, #advantages .advantage:active, #advantages .advantage:focus {
+    outline: 0;
 }
 
 #advantages-nav {
     display: none;
     margin-top: 40px;
     text-align: center;
+    outline: 0;
+}
+
+#advantages-nav:hover, #advantages-nav:focus, #advantages-nav:active {
+    outline: 0;
 }
 
 #advantages-nav .slick-next::after {
@@ -455,6 +481,7 @@ object img {
     padding: 13px 30px;
     cursor: pointer;
     letter-spacing: 0.01em;
+    outline: 0;
 }
 
 #programs-container #programs ul li {
@@ -474,6 +501,7 @@ object img {
 
 #programs-container #programs ul li.ui-state-hover a {
     color: rgb(165, 142, 149);
+    outline: 0;
 }
 
 #programs-container #programs ul li.ui-state-focus {
@@ -482,6 +510,7 @@ object img {
 
 #programs-container #programs ul li.ui-state-focus a {
     color: rgb(91, 76, 80);
+    outline: 0;
 }
 
 #programs-container #programs ul li.ui-state-active {
@@ -491,6 +520,7 @@ object img {
 
 #programs-container #programs ul li.ui-state-active a {
     color: rgb(255, 255, 255);
+    outline: 0;
 }
 
 #programs-container #programs ul li:disabled {
@@ -499,6 +529,7 @@ object img {
 
 #programs-container #programs ul li:disabled a {
     color: rgb(188, 182, 184);
+    outline: 0;
 }
 
 #programs-container #programs ul {
@@ -630,6 +661,11 @@ object img {
     justify-content: space-between;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
+    outline: 0;
+}
+
+#teachers-container .teacher:hover, #teachers-container .teacher:active, #teachers-container .teacher:focus {
+    outline: 0;
 }
 
 #teachers-container .teacher .teacher-text {
@@ -679,6 +715,11 @@ object img {
 #teachers-nav {
     margin-top: 60px;
     text-align: center;
+    outline: 0;
+}
+
+#teachers-nav:hover, #teachers-nav:active, #teachers-nav:focus {
+    outline: 0;
 }
 
 .nav {
@@ -766,6 +807,11 @@ object img {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    outline: 0;
+}
+
+#reviews-container .review:hover, #reviews-container .review:active, #reviews-container .review:focus {
+    outline: 0;
 }
 
 #reviews-container .review .review-image {
@@ -802,6 +848,11 @@ object img {
 #reviews-nav {
     margin-top: 60px;
     text-align: center;
+    outline: 0;
+}
+
+#reviews-nav:hover, #reviews-nav:active, #reviews-nav:focus {
+    outline: 0;
 }
 
 /* for slick reviews arrows: */
@@ -849,6 +900,8 @@ object img {
     letter-spacing: 0.01em;
     margin-top: 25px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #order-container #order-text img {
@@ -931,7 +984,7 @@ object img {
     border-style: solid;
     width: 100%;
     border-radius: 26px;
-    outline: none;
+    outline: 0;
     padding: 15px 23px;
     box-sizing: border-box;
     margin-bottom: 15px;
@@ -948,16 +1001,19 @@ object img {
 .btn-form-transparent:hover, #order-form .btn-form-transparent:hover::placeholder {
     border-color: rgb(165, 142, 149);
     color: rgb(165, 142, 149);
+    outline: 0;
 }
 
 .btn-form-transparent:focus, #order-form .btn-form-transparent:focus::placeholder {
     color: rgb(91, 76, 80);
     border-color: rgb(91, 76, 80);
+    outline: 0;
 }
 
 .btn-form-transparent:disabled, #order-form .btn-form-transparent:disabled::placeholder {
     color: rgb(188, 182, 184);
     border-color: rgb(188, 182, 184);
+    outline: 0;
 }
 
 #order-form #order-action button {
@@ -969,11 +1025,13 @@ object img {
     font-family: "NunitoRegular", sans-serif;
     color: rgb(255, 255, 255);
     letter-spacing: 0.01em;
+    outline: 0;
 }
 
 /* for selectmenu */
 #order-form .ui-selectmenu-button.ui-button {
     width: 100%;
+    outline: 0;
 }
 
 #order-form .ui-button {
@@ -982,7 +1040,7 @@ object img {
     border-style: solid;
     width: 100%;
     border-radius: 26px;
-    outline: none;
+    outline: 0;
     padding: 15px 23px;
     box-sizing: border-box;
     margin-bottom: 15px;
@@ -995,17 +1053,20 @@ object img {
     background: transparent;
     border-color: rgb(165, 142, 149);
     color: rgb(165, 142, 149);
+    outline: 0;
 }
 
 #order-form .ui-button:focus {
     background: transparent;
     color: rgb(91, 76, 80);
     border-color: rgb(91, 76, 80);
+    outline: 0;
 }
 
 #order-form #select-button.ui-button.ui-selectmenu-button-open {
     border-radius: 26px 26px 0 0;
     border-bottom: 1px solid #e4e5eb;
+    outline: 0;
 }
 
 #order-form .ui-button .ui-icon {
@@ -1045,6 +1106,16 @@ object img {
     background: #fff;
     color: rgb(131, 109, 115);
     padding: 10px 17px;
+}
+
+.ui-widget-content.ui-menu .ui-menu-item, .ui-widget-content.ui-menu .ui-menu-item:hover,
+.ui-widget-content.ui-menu .ui-menu-item:focus, .ui-widget-content.ui-menu .ui-menu-item:active {
+    outline: 0;
+}
+
+.ui-menu .ui-menu-item-wrapper, .ui-menu .ui-menu-item-wrapper:hover,
+.ui-menu .ui-menu-item-wrapper:focus, .ui-menu .ui-menu-item-wrapper:active {
+    outline: 0;
 }
 
 .ui-widget-content.ui-menu .ui-menu-item:last-child {
@@ -1111,10 +1182,20 @@ object img {
     box-sizing: border-box;
     transition: all 0.4s linear;
     letter-spacing: 0.02em;
+    outline: 0;
 }
 
 #questions-container .question-flex .question-accordion .question-text.ui-state-active {
     border-radius: 20px 20px 0 0;
+    outline: 0;
+}
+
+#questions-container .question-flex .question-accordion .question-text.ui-state-hover {
+    outline: 0;
+}
+
+#questions-container .question-flex .question-accordion .question-text.ui-state-focus {
+    outline: 0;
 }
 
 #questions-container .question-flex .question-accordion .question-text::after {
@@ -1168,10 +1249,12 @@ object img {
     border: 0;
     border-top: 1px solid #e4e5eb;
     transition: border-radius 0.4s linear;
+    outline: 0;
 }
 
 #questions-container .question-flex .question-accordion .question-answer.ui-accordion-content.ui-accordion-content-active {
     border-radius: 0 0 20px 20px;
+    outline: 0;
 }
 
 #contacts-container {
@@ -1231,6 +1314,7 @@ object img {
     width: 227px;
     font-family: "NunitoBold", sans-serif;
     letter-spacing: 0.02em;
+    outline: 0;
 }
 
 #contacts-container #contacts #socials {
@@ -1248,6 +1332,7 @@ object img {
     justify-content: center;
     margin-right: 20px;
     transition: .5s all;
+    outline: 0;
 }
 
 #contacts-container #contacts #socials .social:last-child {
@@ -1270,16 +1355,19 @@ object img {
 #contacts-container #contacts #socials .social:hover, #contacts-container #contacts #socials .social:hover svg {
     fill: #cf989f;
     border-color:#cf989f;
+    outline: 0;
 }
 
 #contacts-container #contacts #socials .social:active, #contacts-container #contacts #socials .social:active svg {
     fill: #8a5158;
     border-color:#8a5158;
+    outline: 0;
 }
 
 #contacts-container #contacts #socials .social:disabled, #contacts-container #contacts #socials .social:disabled svg {
     fill: #bcb6b8;
     border-color:#bcb6b8;
+    outline: 0;
 }
 
 #contacts-container #map-mask {
@@ -1377,18 +1465,22 @@ object img {
     right: 20px;
     fill: #836d73;
     cursor: pointer;
+    outline: 0;
 }
 
 .popup-cancel:hover {
     fill: #a58e95;
+    outline: 0;
 }
 
 .popup-cancel:active {
     fill: #5b4c50;
+    outline: 0;
 }
 
 .popup-cancel:disabled {
     fill: #bcb6b8;
+    outline: 0;
 }
 
 #call-container #call {
@@ -1445,6 +1537,7 @@ object img {
     font-family: "NunitoSemiBold", sans-serif;
     color: rgb(255, 255, 255);
     letter-spacing: 0.01em;
+    outline: 0;
 }
 
 #call-container #call-send {
@@ -1493,6 +1586,8 @@ object img {
     width: 30px;
     height: 30px;
     fill: #b26e77;
+    position: relative;
+    z-index: 5;
 }
 
 #mobile-call {
@@ -1501,6 +1596,8 @@ object img {
     height: 22px;
     fill: #b26e77;
     margin-right: 35px;
+    position: relative;
+    z-index: 5;
 }
 
 #call-container .call-image.call-image-mobile {
@@ -1539,6 +1636,7 @@ object img {
     display: inline-flex;
     margin-right: 20px;
     margin-bottom: 16px;
+    outline: 0;
 }
 
 #mobile-menu-container #mobile-menu a:last-child {

@@ -637,7 +637,7 @@
     #main-action button {
         width: 290px;
         margin: 0 auto;
-        height: 48px;
+        padding: 6px;
     }
 
     #main-action button div {
@@ -844,8 +844,6 @@
         max-width: 80%;
         text-align: left;
         font-size: 14px;
-        display: flex;
-        flex-direction: column;
     }
 
     .ui-widget {
@@ -853,7 +851,7 @@
     }
 
     .ui-widget-content {
-        padding: 17px;
+        padding: 22px 17px 17px 17px;
     }
 
     .btn-form-transparent {
@@ -1030,9 +1028,11 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+}
 
+@media screen and (max-width: 494px) {
     #teachers-container .teacher .teacher-text {
-        height: 415px;
+        height: 435px;
     }
 }
 
@@ -1083,10 +1083,6 @@
         margin-right: 0;
     }
 
-    #teachers-container .teacher .teacher-text {
-        height: 435px;
-    }
-
     #order-container #order-form {
         width: 100%;
         padding: 40px 15px;
@@ -1102,7 +1098,7 @@
     }
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 414px) {
     #teachers-container .teacher .teacher-text {
         height: 455px;
     }
@@ -1125,13 +1121,13 @@
     }
 }
 
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 390px) {
     #teachers-container .teacher .teacher-text {
         height: 475px;
     }
 }
 
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 388px) {
     #teachers-container .teacher .teacher-text {
         height: 505px;
     }
@@ -1205,7 +1201,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 362px) {
     #reviews-container .review .review-description {
         height: 240px;
     }
@@ -1215,7 +1211,7 @@
     }
 }
 
-@media screen and (max-width: 351px) {
+@media screen and (max-width: 353px) {
     #teachers-container .teacher .teacher-text {
         height: 545px;
     }
@@ -1225,13 +1221,13 @@
     }
 }
 
-@media screen and (max-width: 338px) {
+@media screen and (max-width: 340px) {
     #teachers-container .teacher .teacher-text {
         height: 565px;
     }
 }
 
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 330px) {
     #reviews-container .review .review-description {
         height: 280px;
     }
