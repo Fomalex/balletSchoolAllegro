@@ -156,20 +156,23 @@ $(document).ready(function () {
         let phone = $(callInputs[1]);
 
         if (!hasError) {
-            // $('#call').hide();
-            // $('#call-send').css('display', 'flex');
-            $.ajax({
-                type: 'post',
-                url: 'call_mail.php',
-                data: 'name=' + name.val() + '&phone=' + phone.val(),
-                success: () => {
-                    $('#call').hide();
-                    $('#call-send').css('display', 'flex');
-                },
-                error: () => {
-                    alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона.');
-                }
-            });
+            // Для отображения на github pages (т.к. он не поддерживает php):
+            $('#call').hide();
+            $('#call-send').css('display', 'flex');
+
+            // Отправка письма для размещения на хостинге:
+            // $.ajax({
+            //     type: 'post',
+            //     url: 'call_mail.php',
+            //     data: 'name=' + name.val() + '&phone=' + phone.val(),
+            //     success: () => {
+            //         $('#call').hide();
+            //         $('#call-send').css('display', 'flex');
+            //     },
+            //     error: () => {
+            //         alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона.');
+            //     }
+            // });
         }
     });
 
@@ -203,18 +206,21 @@ $(document).ready(function () {
         let phone = $('#phone');
 
         if (!hasError) {
-            // $('#reservation-container').css('display', 'flex');
-            $.ajax({
-                type: 'post',
-                url: 'mail.php',
-                data: 'name=' + name.val() + '&program=' + program + '&phone=' + phone.val(),
-                success: () => {
-                    $('#reservation-container').css('display', 'flex');
-                },
-                error: () => {
-                    alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона или закажите звонок.');
-                }
-            });
+            // Для отображения на github pages (т.к. он не поддерживает php):
+            $('#reservation-container').css('display', 'flex');
+
+            // Отправка письма для размещения на хостинге:
+            // $.ajax({
+            //     type: 'post',
+            //     url: 'mail.php',
+            //     data: 'name=' + name.val() + '&program=' + program + '&phone=' + phone.val(),
+            //     success: () => {
+            //         $('#reservation-container').css('display', 'flex');
+            //     },
+            //     error: () => {
+            //         alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона или закажите звонок.');
+            //     }
+            // });
         }
     });
 
