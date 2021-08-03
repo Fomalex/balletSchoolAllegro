@@ -806,7 +806,7 @@
     }
 
     #teachers-container .teacher .teacher-text {
-        height: 365px;
+        height: 375px;
     }
 
     #teachers-container {
@@ -1035,7 +1035,7 @@
 
 @media screen and (max-width: 494px) {
     #teachers-container .teacher .teacher-text {
-        height: 435px;
+        height: 445px;
     }
 }
 
@@ -1103,7 +1103,7 @@
 
 @media screen and (max-width: 414px) {
     #teachers-container .teacher .teacher-text {
-        height: 455px;
+        height: 465px;
     }
 
     #reviews-container .block-title {
@@ -1126,13 +1126,13 @@
 
 @media screen and (max-width: 390px) {
     #teachers-container .teacher .teacher-text {
-        height: 475px;
+        height: 485px;
     }
 }
 
 @media screen and (max-width: 388px) {
     #teachers-container .teacher .teacher-text {
-        height: 505px;
+        height: 515px;
     }
 }
 
@@ -1210,13 +1210,13 @@
     }
 
     #teachers-container .teacher .teacher-text {
-        height: 525px;
+        height: 535px;
     }
 }
 
 @media screen and (max-width: 353px) {
     #teachers-container .teacher .teacher-text {
-        height: 545px;
+        height: 555px;
     }
 
     #reviews-container .review .review-text {
@@ -1226,7 +1226,7 @@
 
 @media screen and (max-width: 340px) {
     #teachers-container .teacher .teacher-text {
-        height: 565px;
+        height: 575px;
     }
 }
 

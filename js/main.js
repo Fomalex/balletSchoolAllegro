@@ -152,24 +152,24 @@ $(document).ready(function () {
             }
         }
 
-        let name = callInputs[0];
-        let phone = callInputs[1];
+        let name = $(callInputs[0]);
+        let phone = $(callInputs[1]);
 
         if (!hasError) {
-            $('#call').hide();
-            $('#call-send').css('display', 'flex');
-            // $.ajax({
-            //     type: 'post',
-            //     url: 'call_mail.php',
-            //     data: 'name=' + name.val() + '&phone=' + phone.val(),
-            //     success: () => {
-            //         $('#call').hide();
-            //         $('#call-send').css('display', 'flex');
-            //     },
-            //     error: () => {
-            //         alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона.');
-            //     }
-            // });
+            // $('#call').hide();
+            // $('#call-send').css('display', 'flex');
+            $.ajax({
+                type: 'post',
+                url: 'call_mail.php',
+                data: 'name=' + name.val() + '&phone=' + phone.val(),
+                success: () => {
+                    $('#call').hide();
+                    $('#call-send').css('display', 'flex');
+                },
+                error: () => {
+                    alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона.');
+                }
+            });
         }
     });
 
@@ -203,18 +203,18 @@ $(document).ready(function () {
         let phone = $('#phone');
 
         if (!hasError) {
-            $('#reservation-container').css('display', 'flex');
-            // $.ajax({
-            //     type: 'post',
-            //     url: 'mail.php',
-            //     data: 'name=' + name.val() + '&program=' + program + '&phone=' + phone.val(),
-            //     success: () => {
-            //         $('#reservation-container').css('display', 'flex');
-            //     },
-            //     error: () => {
-            //         alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона или закажите звонок.');
-            //     }
-            // });
+            // $('#reservation-container').css('display', 'flex');
+            $.ajax({
+                type: 'post',
+                url: 'mail.php',
+                data: 'name=' + name.val() + '&program=' + program + '&phone=' + phone.val(),
+                success: () => {
+                    $('#reservation-container').css('display', 'flex');
+                },
+                error: () => {
+                    alert('Ошибка записи. Свяжитесь, пожалуйста, по номеру телефона или закажите звонок.');
+                }
+            });
         }
     });
 
