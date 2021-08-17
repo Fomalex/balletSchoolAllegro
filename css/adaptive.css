@@ -429,6 +429,17 @@
 
     #programs-container #programs ul {
         margin-bottom: 30px;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+        margin-right: -20px;
+        padding-right: 20px;
+        margin-left: -20px;
+        padding-left: 20px;
+    }
+
+    #programs-container #programs ul::-webkit-scrollbar { /* убрать полосу прокрутки */
+        width: 0;
     }
 
     #teachers-container {
@@ -1029,6 +1040,13 @@
     #teachers-container, #reviews-container, #order-container, #questions-container,
     #contacts-container, #contacts-container #map-mask, #footer {
         padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #programs-container #programs ul {
+        margin-right: -15px;
+        padding-right: 15px;
+        margin-left: -15px;
         padding-left: 15px;
     }
 }

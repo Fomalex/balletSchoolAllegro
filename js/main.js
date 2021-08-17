@@ -261,22 +261,22 @@ $(document).ready(function () {
             });
             if (window.innerWidth < 768) {
                 //for programs-tabs slick (max-width 767px):
-                programNav.not('.slick-initialized').slick({
-                    dots: false,
-                    variableWidth: true, //для пунктов разной ширины
-                    arrows: false,
-                    infinite: false,
-                    slidesToScroll: 1
-                });
-                programNav.on('wheel', (function (e) { //для скролла колёсиком мыши
-                    e.preventDefault();
-
-                    if (e.originalEvent.deltaY < 0) {
-                        $(this).slick('slickNext');
-                    } else {
-                        $(this).slick('slickPrev');
-                    }
-                }));
+                // programNav.not('.slick-initialized').slick({
+                //     dots: false,
+                //     variableWidth: true, //для пунктов разной ширины
+                //     arrows: false,
+                //     infinite: false,
+                //     slidesToScroll: 1
+                // });
+                // programNav.on('wheel', (function (e) { //для скролла колёсиком мыши
+                //     e.preventDefault();
+                //
+                //     if (e.originalEvent.deltaY < 0) {
+                //         $(this).slick('slickNext');
+                //     } else {
+                //         $(this).slick('slickPrev');
+                //     }
+                // }));
                 //для изменения высоты картинки пропорционально ширине в блоках programs, teachers:
                 $(function () {
                     programImg.height(programImg.width() / 0.82);
